@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <link href="styles/lab1.css" rel="stylesheet" type="text/css">
+    <title>Questionnaire</title>
+</head>
+
+<body>
+<h1>Survey</h1>
+<form id="myform" action="index.php" >
+    <br>
+    <br>
+    <! Choose a website to evaluate >
+    <h3><i>Satisfaction Survey on School Facilities and Projects</i></h3>
+    <h2>What do you think of the facilities in <a href="https://www.uottawa.ca">uOttawa</a>?</h2>
+    <br>
+    <br>
+    <! You should make your image clickable>
+    <img src="image/uOttawa_1.png" alt="https://www.uottawa.ca" width="600" height="160">
+    <br>
+    <br>
+    <div class="question">
+        <h2> Personal Information </h2>
+        <p>First name: <input type="text" name="firstname"></p>
+        <p>Last name: <input type="text" name="lastname"></p>
+        <p>Student number: <input type="text" number="number"></p>
+        <br>
+        <br>
+
+    </div>
+
+    <div class="question">
+        <h2> 1. What kind of food do you usually eat in the Dining Hall? </h2>
+        I like:<br>
+        <input type="checkbox" name= "Food" value="Pasta">Pasta<br>
+        <input type="checkbox" name= "Food" value="Fish">Fish<br>
+        <input type="checkbox" name= "Food" value="Fired rice">Fired rice<br>
+        <input type="checkbox" name= "Food" value="Beverage">Beverage<br>
+        <input type="checkbox" name= "Food" value="Pizza">Pizza<br>
+
+        <br>
+    </div>
+    <div class="question">
+        <h2> 2. Do you have any feeling in the Dining Hall? </h2>
+        I have feelings about:<br>
+        <input type="checkbox" name="Feelings" value="Crowded">Crowded<br>
+        <input type="checkbox" name="Feelings" value="Crowded">Noisy<br>
+        <input type="checkbox" name="Feelings" value="Crowded">Clean<br>
+        <input type="checkbox" name="Feelings" value="Crowded">Delicious<br>
+        <br>
+    </div>
+    <div class="question">
+        <h2>3. How long do you spend in the cafeteria on average each time?</h2>
+        <br>
+        <select id="time">
+            <option value="hour" selected="selected">within 1 hour</option>
+            <option value="hour">1-3 hours</option>
+            <option value="hour">3-6 hours</option>
+            <option value="hour">more than 6 hours</option>
+        </select>
+    </div>
+    <div class="question">
+        <h2>4. What events do you usually use the gym for?</h2>
+        <br>
+        <select id="sports">
+            <option value="sports" selected="selected">Basketball</option>
+            <option value="sports">Swimming</option>
+            <option value="sports">Badminton</option>
+            <option value="sports">Singing, dancing and Rapping</option>
+            <option value="sports">Never used</option>
+        </select>
+        <h2> 5. Whether the facilities of the gymnasium are perfect and complete? </h2>
+        <br>
+        <input type="checkbox" name= "check" value="Completed">Completed<br>
+        <input type="checkbox" name= "check" value="Uncompleted">Uncompleted<br>
+
+            <br>
+            If uncompleted, please give us any advices:<br>
+            <textarea rows="5" cols="30"></textarea>
+
+            <br>
+        <br>
+
+    </div>
+    <div class="question">
+        <h2> 6. Do you often use the library loan service to read? </h2>
+        <br>
+        <input type="checkbox" name="Library" value="Most of the time study in the library">Most of the time study in the library<br>
+        <input type="checkbox" name="Library" value="Occasionally borrow books from the library to study">Occasionally borrow books from the library to study<br>
+        <input type="checkbox" name="Library" value="Not Crowded">Never been to the library<br>
+        <input type="checkbox" name="Library" value="Not Crowded">Do we have a library?<br>
+        <br>
+
+    </div>
+
+    <br>
+
+    <br>
+
+    <button id="submitButton" type="button" class="block">
+        SUBMIT your questionnaire
+    </button>
+
+    <p id="signature">Site created by Ye Ji, Junhong Chen, Linyan Qi</p>
+
+</form>
+</body>
+</html>
